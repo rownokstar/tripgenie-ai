@@ -7,28 +7,21 @@
         "type": "landmark",
         "duration": "2 hours",
         "entry_fee": "€28",
-        "description": "Iconic iron lattice tower on the Champ de Mars, offering panoramic views of Paris."
+        "description": "Iconic iron lattice tower offering panoramic views of Paris."
       },
       {
         "name": "Louvre Museum",
         "type": "museum",
         "duration": "4 hours",
         "entry_fee": "€17",
-        "description": "World’s largest art museum and home to masterpieces like the Mona Lisa and The Venus de Milo."
+        "description": "Home to the Mona Lisa and one of the world’s largest art collections."
       },
       {
         "name": "Montmartre",
         "type": "neighborhood",
         "duration": "3 hours",
         "entry_fee": "Free",
-        "description": "Artistic hilltop district known for its bohemian history, street artists, and Sacré-Cœur Basilica."
-      },
-      {
-        "name": "Notre-Dame Cathedral",
-        "type": "cathedral",
-        "duration": "1.5 hours",
-        "entry_fee": "Free (exterior), €10 (tower access)",
-        "description": "Gothic masterpiece on Île de la Cité, currently under restoration but still impressive."
+        "description": "Artistic district with Sacré-Cœur Basilica and street performers."
       }
     ],
     "restaurants": [
@@ -36,35 +29,253 @@
         "name": "Le Marais",
         "cuisine": "French",
         "price": "$$$",
-        "must_try": "Duck confit with red wine sauce"
+        "must_try": "Duck confit"
       },
       {
         "name": "L’As du Fallafel",
         "cuisine": "Middle Eastern",
         "price": "$$",
-        "must_try": "Crispy falafel sandwich with harissa"
-      },
-      {
-        "name": "Café de Flore",
-        "cuisine": "Café",
-        "price": "$$$",
-        "must_try": "Croissant with espresso"
+        "must_try": "Falafel sandwich"
       }
     ],
     "tips": [
-      "Buy a Paris Museum Pass for unlimited access and skip-the-line entry.",
-      "Use the Metro — it's fast, cheap, and covers all major attractions.",
-      "Visit the Eiffel Tower at night to see the sparkling light show every hour."
+      "Buy a Paris Museum Pass to save money and skip lines.",
+      "Use the Metro — it's fast and covers all major sites.",
+      "Visit the Eiffel Tower at night for the sparkling light show."
     ],
     "itineraries": {
-      "3-day": [
-        "Day 1: Eiffel Tower → Seine River Cruise → Champs-Élysées → Arc de Triomphe",
-        "Day 2: Louvre Museum → Tuileries Garden → Notre-Dame → Sainte-Chapelle",
-        "Day 3: Montmartre → Sacré-Cœur → Moulin Rouge → Dinner in Le Marais"
-      ],
       "1-day": [
         "Morning: Louvre → Tuileries → Notre-Dame → Sainte-Chapelle",
-        "Evening: Seine Cruise → Eiffel Tower (night view)"
+        "Evening: Seine River Cruise → Eiffel Tower (night view)"
+      ],
+      "3-day": [
+        "Day 1: Eiffel Tower → Seine Cruise → Champs-Élysées → Arc de Triomphe",
+        "Day 2: Louvre → Montmartre → Sacré-Cœur → Moulin Rouge",
+        "Day 3: Palace of Versailles (day trip) → Dinner in Le Marais"
+      ]
+    }
+  },
+  {
+    "city": "Rome",
+    "attractions": [
+      {
+        "name": "Colosseum",
+        "type": "ancient site",
+        "duration": "2.5 hours",
+        "entry_fee": "€16",
+        "description": "Ancient Roman amphitheater that once hosted gladiator battles."
+      },
+      {
+        "name": "Vatican Museums & Sistine Chapel",
+        "type": "museum",
+        "duration": "4 hours",
+        "entry_fee": "€21",
+        "description": "World-famous art collection and Michelangelo’s ceiling masterpiece."
+      },
+      {
+        "name": "Trevi Fountain",
+        "type": "fountain",
+        "duration": "30 minutes",
+        "entry_fee": "Free",
+        "description": "Baroque masterpiece where visitors toss coins for good luck."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Roscioli",
+        "cuisine": "Italian",
+        "price": "$$$",
+        "must_try": "Carbonara"
+      },
+      {
+        "name": "Supplì",
+        "cuisine": "Roman Street Food",
+        "price": "$",
+        "must_try": "Fried rice balls with mozzarella"
+      }
+    ],
+    "tips": [
+      "Book skip-the-line tickets for the Colosseum and Vatican in advance.",
+      "Wear comfortable shoes — Rome is best explored on foot.",
+      "Tap water is safe and free at public fountains (nasoni)."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Colosseum → Roman Forum → Capitoline Hill",
+        "Afternoon: Trevi Fountain → Pantheon → Piazza Navona → Dinner in Trastevere"
+      ],
+      "3-day": [
+        "Day 1: Colosseum → Roman Forum → Vatican (St. Peter’s Basilica)",
+        "Day 2: Vatican Museums → Sistine Chapel → Castel Sant’Angelo → Tiber River Walk",
+        "Day 3: Trastevere food tour → Villa Borghese → Evening gelato at Giolitti"
+      ]
+    }
+  },
+  {
+    "city": "London",
+    "attractions": [
+      {
+        "name": "British Museum",
+        "type": "museum",
+        "duration": "3 hours",
+        "entry_fee": "Free",
+        "description": "Home to the Rosetta Stone and Egyptian mummies."
+      },
+      {
+        "name": "Tower Bridge & Tower of London",
+        "type": "landmark",
+        "duration": "2.5 hours",
+        "entry_fee": "£14",
+        "description": "Iconic bridge and historic castle with the Crown Jewels."
+      },
+      {
+        "name": "West End",
+        "type": "theater",
+        "duration": "3 hours",
+        "entry_fee": "£50+",
+        "description": "Famous theater district with world-class musicals and plays."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Dishoom",
+        "cuisine": "Indian-British",
+        "price": "$$$",
+        "must_try": "Chicken Ruby curry"
+      },
+      {
+        "name": "Borough Market",
+        "cuisine": "Street Food",
+        "price": "$$",
+        "must_try": "Oysters, gourmet sandwiches"
+      }
+    ],
+    "tips": [
+      "Get an Oyster Card for cheap and easy public transport.",
+      "Book theater tickets in advance for discounts.",
+      "Many museums are free — plan accordingly!"
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Tower Bridge → Tower of London → HMS Belfast",
+        "Afternoon: Borough Market → London Eye → Westminster Abbey → Big Ben"
+      ],
+      "3-day": [
+        "Day 1: British Museum → Covent Garden → West End show",
+        "Day 2: Tower Bridge → Tower of London → Shard (view) → Thames River Cruise",
+        "Day 3: Buckingham Palace → Hyde Park → Harrods → Camden Market"
+      ]
+    }
+  },
+  {
+    "city": "Barcelona",
+    "attractions": [
+      {
+        "name": "Sagrada Família",
+        "type": "church",
+        "duration": "2 hours",
+        "entry_fee": "€26",
+        "description": "Gaudí’s unfinished masterpiece with stunning stained glass and towers."
+      },
+      {
+        "name": "Park Güell",
+        "type": "park",
+        "duration": "2 hours",
+        "entry_fee": "€10",
+        "description": "Whimsical park with mosaics, sculptures, and panoramic city views."
+      },
+      {
+        "name": "La Rambla",
+        "type": "street",
+        "duration": "1 hour",
+        "entry_fee": "Free",
+        "description": "Famous pedestrian street with street performers and shops."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Can Culleretes",
+        "cuisine": "Catalan",
+        "price": "$$$",
+        "must_try": "Pa amb tomàquet with cured ham"
+      },
+      {
+        "name": "Boqueria Market",
+        "cuisine": "Tapas",
+        "price": "$$",
+        "must_try": "Fresh seafood tapas"
+      }
+    ],
+    "tips": [
+      "Book Sagrada Família tickets online to skip the line.",
+      "Avoid eating on La Rambla — overpriced and touristy.",
+      "Use the T-Casual metro card for 10 rides."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Sagrada Família → Park Güell",
+        "Afternoon: Casa Batlló → Passeig de Gràcia → La Rambla → Boqueria Market"
+      ],
+      "3-day": [
+        "Day 1: Sagrada Família → Park Güell → Gaudí tour",
+        "Day 2: Gothic Quarter → Picasso Museum → Barceloneta Beach",
+        "Day 3: Montserrat day trip → Tapas dinner in Gràcia"
+      ]
+    }
+  },
+  {
+    "city": "Amsterdam",
+    "attractions": [
+      {
+        "name": "Van Gogh Museum",
+        "type": "museum",
+        "duration": "2.5 hours",
+        "entry_fee": "€20",
+        "description": "Largest collection of Van Gogh’s paintings in the world."
+      },
+      {
+        "name": "Anne Frank House",
+        "type": "historical",
+        "duration": "1.5 hours",
+        "entry_fee": "€16",
+        "description": "Hiding place of Anne Frank during WWII — emotional and powerful."
+      },
+      {
+        "name": "Jordaan District",
+        "type": "neighborhood",
+        "duration": "2 hours",
+        "entry_fee": "Free",
+        "description": "Charming canalside area with boutiques and cafes."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Pancakes Amsterdam",
+        "cuisine": "Dutch",
+        "price": "$$",
+        "must_try": "Apple & bacon pancake"
+      },
+      {
+        "name": "Foodhallen",
+        "cuisine": "International",
+        "price": "$$$",
+        "must_try": "Gourmet street food"
+      }
+    ],
+    "tips": [
+      "Book Anne Frank House tickets weeks in advance.",
+      "Rent a bike — it’s the best way to explore the city.",
+      "Avoid coffee shops selling soft drugs — stick to cafes."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Rijksmuseum → Van Gogh Museum",
+        "Afternoon: Jordaan → Anne Frank House → Canal Cruise"
+      ],
+      "3-day": [
+        "Day 1: Museums (Van Gogh, Rijks) → Vondelpark",
+        "Day 2: Anne Frank House → Red Light District → Dam Square",
+        "Day 3: Zaanse Schans (windmills) → Cheese tasting → Evening in De Pijp"
       ]
     }
   },
@@ -76,28 +287,21 @@
         "type": "temple",
         "duration": "2 hours",
         "entry_fee": "Free",
-        "description": "Tokyo’s oldest temple located in Asakusa, known for its giant lantern and bustling Nakamise shopping street."
+        "description": "Tokyo’s oldest temple in Asakusa with a vibrant market street."
       },
       {
         "name": "Shibuya Crossing",
         "type": "landmark",
         "duration": "1 hour",
         "entry_fee": "Free",
-        "description": "World’s busiest pedestrian scramble, iconic in films and media."
+        "description": "World’s busiest pedestrian scramble."
       },
       {
         "name": "Meiji Shrine",
         "type": "shrine",
         "duration": "1.5 hours",
         "entry_fee": "Free",
-        "description": "Serene Shinto shrine dedicated to Emperor Meiji, surrounded by a lush forest in Shibuya."
-      },
-      {
-        "name": "Tokyo Skytree",
-        "type": "observation",
-        "duration": "2 hours",
-        "entry_fee": "¥2,100",
-        "description": "Towering observation deck with panoramic views of Tokyo and Mount Fuji on clear days."
+        "description": "Peaceful forest shrine dedicated to Emperor Meiji."
       }
     ],
     "restaurants": [
@@ -105,35 +309,253 @@
         "name": "Sukiyabashi Jiro",
         "cuisine": "Sushi",
         "price": "$$$$",
-        "must_try": "Omakase (chef’s choice) experience"
+        "must_try": "Omakase"
       },
       {
         "name": "Ichiran Ramen",
         "cuisine": "Ramen",
         "price": "$$",
-        "must_try": "Tonkotsu ramen with extra chashu"
-      },
-      {
-        "name": "Tsukiji Tama Sushi",
-        "cuisine": "Sushi",
-        "price": "$$$",
-        "must_try": "Fresh tuna and uni (sea urchin)"
+        "must_try": "Tonkotsu ramen"
       }
     ],
     "tips": [
-      "Get a Suica or Pasmo card for seamless travel on trains and buses.",
-      "Reserve high-end restaurants like Sukiyabashi Jiro weeks in advance.",
-      "Avoid rush hour (8–9:30 AM) on trains — it gets extremely crowded."
+      "Get a Suica card for easy train travel.",
+      "Reserve top restaurants in advance.",
+      "Avoid rush hour (8–9:30 AM)."
     ],
     "itineraries": {
-      "3-day": [
-        "Day 1: Meiji Shrine → Harajuku (Takeshita Street) → Shibuya Crossing → Hachiko Statue",
-        "Day 2: Asakusa (Senso-ji) → Tokyo Skytree → Sumida River Cruise",
-        "Day 3: Tsukiji Outer Market → Odaiba (teamLab Planets) → Robot Restaurant"
-      ],
       "1-day": [
         "Morning: Meiji Shrine → Harajuku → Shibuya Crossing",
-        "Afternoon: Akihabara (electronics) → Dinner in Shinjuku"
+        "Afternoon: Akihabara → Dinner in Shinjuku"
+      ],
+      "3-day": [
+        "Day 1: Asakusa → Senso-ji → Tokyo Skytree",
+        "Day 2: Tsukiji Market → Odaiba → teamLab Planets",
+        "Day 3: Imperial Palace → Ueno Park → Golden Gai bars"
+      ]
+    }
+  },
+  {
+    "city": "Bangkok",
+    "attractions": [
+      {
+        "name": "Grand Palace & Wat Phra Kaew",
+        "type": "temple",
+        "duration": "3 hours",
+        "entry_fee": "฿500",
+        "description": "Stunning royal complex with the Emerald Buddha."
+      },
+      {
+        "name": "Chatuchak Weekend Market",
+        "type": "market",
+        "duration": "3 hours",
+        "entry_fee": "Free",
+        "description": "One of the world’s largest weekend markets with 15,000+ stalls."
+      },
+      {
+        "name": "Chao Phraya River",
+        "type": "river",
+        "duration": "2 hours",
+        "entry_fee": "฿50",
+        "description": "Scenic river cruise with stops at major temples."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Jay Fai",
+        "cuisine": "Thai",
+        "price": "$$$",
+        "must_try": "Crab omelette"
+      },
+      {
+        "name": "Som Tum Jay So",
+        "cuisine": "Street Food",
+        "price": "$",
+        "must_try": "Papaya salad"
+      }
+    ],
+    "tips": [
+      "Dress modestly when visiting temples (cover shoulders and knees).",
+      "Use Grab (like Uber) or river boats to avoid traffic.",
+      "Drink bottled water only."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Grand Palace → Wat Pho (Reclining Buddha)",
+        "Afternoon: Damnoen Saduak Floating Market → Dinner at Chinatown"
+      ],
+      "3-day": [
+        "Day 1: Grand Palace → Wat Pho → Jim Thompson House",
+        "Day 2: Chatuchak Market → Siam Paragon → Rooftop bar (Sky Bar)",
+        "Day 3: Ayutthaya day trip → Floating market → Thai massage"
+      ]
+    }
+  },
+  {
+    "city": "Singapore",
+    "attractions": [
+      {
+        "name": "Gardens by the Bay",
+        "type": "garden",
+        "duration": "3 hours",
+        "entry_fee": "S$28",
+        "description": "Futuristic park with Supertree Grove and Cloud Forest Dome."
+      },
+      {
+        "name": "Marina Bay Sands",
+        "type": "resort",
+        "duration": "2 hours",
+        "entry_fee": "S$23 (SkyPark)",
+        "description": "Iconic hotel with infinity pool and panoramic city views."
+      },
+      {
+        "name": "Sentosa Island",
+        "type": "island",
+        "duration": "Half-day",
+        "entry_fee": "S$12 (cable car)",
+        "description": "Resort island with Universal Studios and beaches."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Hawker Chan",
+        "cuisine": "Chinese",
+        "price": "$",
+        "must_try": "Soya sauce chicken rice"
+      },
+      {
+        "name": "Candlenut",
+        "cuisine": "Peranakan",
+        "price": "$$$",
+        "must_try": "Pineapple duck"
+      }
+    ],
+    "tips": [
+      "Use the EZ-Link card for MRT and buses.",
+      "Chewing gum is banned — don’t bring it!",
+      "Stay hydrated — it’s hot and humid year-round."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Gardens by the Bay → Marina Bay Sands",
+        "Afternoon: Chinatown → Clarke Quay → Night Safari"
+      ],
+      "3-day": [
+        "Day 1: Gardens by the Bay → ArtScience Museum → Merlion Park",
+        "Day 2: Sentosa (Universal Studios) → S.E.A. Aquarium",
+        "Day 3: Little India → Bugis Street → Jewel Changi (Rain Vortex)"
+      ]
+    }
+  },
+  {
+    "city": "Dubai",
+    "attractions": [
+      {
+        "name": "Burj Khalifa",
+        "type": "skyscraper",
+        "duration": "2 hours",
+        "entry_fee": "AED 168",
+        "description": "World’s tallest building with breathtaking views from the observation deck."
+      },
+      {
+        "name": "Dubai Mall",
+        "type": "mall",
+        "duration": "3 hours",
+        "entry_fee": "Free",
+        "description": "One of the world’s largest malls with aquarium, ice rink, and luxury shops."
+      },
+      {
+        "name": "Palm Jumeirah",
+        "type": "island",
+        "duration": "Half-day",
+        "entry_fee": "Free (access)",
+        "description": "Man-made island with luxury hotels and beaches."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Al Fanar Restaurant & Cafe",
+        "cuisine": "Emirati",
+        "price": "$$$",
+        "must_try": "Luqaimat (sweet dumplings)"
+      },
+      {
+        "name": "Zaroob",
+        "cuisine": "Lebanese",
+        "price": "$$",
+        "must_try": "Char-grilled chicken kofta"
+      }
+    ],
+    "tips": [
+      "Book Burj Khalifa tickets online for sunset slots.",
+      "Dress modestly in public areas.",
+      "Tipping is not mandatory but appreciated."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Burj Khalifa → Dubai Mall → Aquarium",
+        "Evening: Dubai Fountain show → Dhow cruise dinner"
+      ],
+      "3-day": [
+        "Day 1: Burj Khalifa → Dubai Mall → Souk Madinat",
+        "Day 2: Desert safari (dune bashing, camel ride, dinner)",
+        "Day 3: Atlantis Aquaventure → Palm Jumeirah → Beach relaxation"
+      ]
+    }
+  },
+  {
+    "city": "Istanbul",
+    "attractions": [
+      {
+        "name": "Hagia Sophia",
+        "type": "mosque/museum",
+        "duration": "1.5 hours",
+        "entry_fee": "₺750",
+        "description": "Historic Byzantine church turned mosque with massive dome and mosaics."
+      },
+      {
+        "name": "Blue Mosque",
+        "type": "mosque",
+        "duration": "1 hour",
+        "entry_fee": "Free",
+        "description": "Famous for its blue Iznik tiles and six minarets."
+      },
+      {
+        "name": "Grand Bazaar",
+        "type": "market",
+        "duration": "2 hours",
+        "entry_fee": "Free",
+        "description": "One of the world’s oldest and largest covered markets."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Hafız Mustafa",
+        "cuisine": "Turkish",
+        "price": "$$",
+        "must_try": "Baklava and Turkish coffee"
+      },
+      {
+        "name": "Nusr-Et Steakhouse",
+        "cuisine": "Steak",
+        "price": "$$$$",
+        "must_try": "Salt Bae experience"
+      }
+    ],
+    "tips": [
+      "Wear modest clothing when visiting mosques.",
+      "Use Istanbulkart for metro, trams, and ferries.",
+      "Bargain politely in bazaars."
+    ],
+    "itineraries": {
+      "1-day": [
+        "Morning: Hagia Sophia → Blue Mosque → Basilica Cistern",
+        "Afternoon: Grand Bazaar → Bosphorus ferry ride → Dinner with skyline view"
+      ],
+      "3-day": [
+        "Day 1: Sultanahmet (Hagia Sophia, Blue Mosque, Topkapi Palace)",
+        "Day 2: Bosphorus cruise → Ortaköy → Taksim Square → Istiklal Street",
+        "Day 3: Spice Bazaar → Suleymaniye Mosque → Turkish bath (hammam)"
       ]
     }
   }
