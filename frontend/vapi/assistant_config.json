@@ -1,0 +1,38 @@
+{
+  "name": "TripGenie Voice Assistant",
+  "model": "gpt-4o-mini",
+  "voice": "josh",
+  "transcriber": {
+    "provider": "deepgram",
+    "model": "nova-2"
+  },
+  "temperature": 0.7,
+  "pronunciation": "en-US",
+  "serverUrl": "https://your-ngrok-url.ngrok.io/vapi/webhook",
+  "webhookUrl": "https://your-ngrok-url.ngrok.io/vapi/events",
+  "firstMessage": "Hi! I'm your AI travel assistant. Where would you like to go?",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a friendly travel assistant. Collect city, days, and interests. Call function get_travel_plan."
+    }
+  ],
+  "functions": [
+    {
+      "name": "get_travel_plan",
+      "description": "Generate a personalized travel itinerary",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "city": { "type": "string" },
+          "days": { "type": "number" },
+          "preferences": { "type": "string" }
+        },
+        "required": ["city", "days", "preferences"]
+      }
+    }
+  ],
+  "functionCall": "get_travel_plan",
+  "silenceTimeoutSeconds": 30,
+  "callTranscription": true
+}
