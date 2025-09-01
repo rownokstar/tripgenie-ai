@@ -1,0 +1,124 @@
+{
+  "name": "Trip Delivery Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "http://backend:8000/plan_trip",
+        "method": "POST",
+        "body": "={{ $json }}"
+      },
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "const data = $json[\"data\"]; \nreturn [{\n  json: {\n    city: data.city,\n    days: data.days,\n    preferences: data.preferences,\n    itinerary: JSON.stringify(data.itinerary),\n    recommendations: data.recommendations.join(', '),\n    tips: data.tips.join(', '),\n    timestamp: new Date().toISOString()\n  }\n}];"
+      },
+      "name": "Prepare Data for Sheets",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "spreadsheetId": "your-google-sheet-id",
+        "range": "A1",
+        "options": {}
+      },
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "const fs = require('fs');\nconst { PDFDocument, StandardFonts, rgb } = require('pdf-lib');\n\nasync function generatePdf(data) {\n  const pdfDoc = await PDFDocument.create();\n  const page = pdfDoc.addPage();\n  const { width, height } = page.getSize();\n  const font = await pdfDoc.embedFont(StandardFonts.HelveticaBold);\n\n  let y = height - 50;\n  page.drawText(`Travel Plan: ${data.city}`, { x: 50, y, size: 24, font, color: rgb(0, 0, 0) });\n  y -= 40;\n\n  data.itinerary.forEach((day, i) => {\n    page.drawText(`Day ${day.day}:`, { x: 50, y, size: 16, font });\n    y -= 30;\n    day.schedule.forEach(act => {\n      page.drawText(`${act.time} - ${act.activity} (${act.location})`, { x: 70, y, size: 12 });\n      y -= 20;\n    });\n    y -= 20;\n  });\n\n  return await pdfDoc.save();\n}\n\nconst pdfBytes = await generatePdf(items[0].json);\n\nreturn [{\n  binary: {\n    data: { data: Buffer.from(pdfBytes).toString('base64'), mimeType: 'application/pdf', fileName: `itinerary_${items[0].json.city}.pdf` }\n  },\n  json: items[0].json\n}];"
+      },
+      "name": "Generate PDF",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "mimeType": "application/pdf",
+        "fileName": "={{ $json[\"city\"] }}_itinerary.pdf"
+      },
+      "name": "Save PDF",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "to": "client@example.com",
+        "subject": "Your Travel Itinerary is Ready!",
+        "text": "Hi! Here's your personalized travel plan to {{ $json[\"city\"] }}.",
+        "attachments": [
+          {
+            "value": "={{ $node[\"Save PDF\"].binary[\"data\"] }}"
+          }
+        ]
+      },
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 1,
+      "position": [1250, 200]
+    },
+    {
+      "parameters": {
+        "numbers": "+8801XXX", 
+        "message": "Hi! Here's your travel plan to {{ $json[\"city\"] }}. Check your email for PDF.",
+        "options": {}
+      },
+      "name": "Send WhatsApp",
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [1250, 400]
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          { "node": "Prepare Data for Sheets", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Prepare Data for Sheets": {
+      "main": [
+        [
+          { "node": "Google Sheets", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          { "node": "Generate PDF", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Generate PDF": {
+      "main": [
+        [
+          { "node": "Save PDF", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Save PDF": {
+      "main": [
+        [
+          { "node": "Send Email", "type": "main", "index": 0 }
+        ],
+        [
+          { "node": "Send WhatsApp", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {}
+}
