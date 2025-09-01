@@ -1,0 +1,140 @@
+[
+  {
+    "city": "Paris",
+    "attractions": [
+      {
+        "name": "Eiffel Tower",
+        "type": "landmark",
+        "duration": "2 hours",
+        "entry_fee": "€28",
+        "description": "Iconic iron lattice tower on the Champ de Mars, offering panoramic views of Paris."
+      },
+      {
+        "name": "Louvre Museum",
+        "type": "museum",
+        "duration": "4 hours",
+        "entry_fee": "€17",
+        "description": "World’s largest art museum and home to masterpieces like the Mona Lisa and The Venus de Milo."
+      },
+      {
+        "name": "Montmartre",
+        "type": "neighborhood",
+        "duration": "3 hours",
+        "entry_fee": "Free",
+        "description": "Artistic hilltop district known for its bohemian history, street artists, and Sacré-Cœur Basilica."
+      },
+      {
+        "name": "Notre-Dame Cathedral",
+        "type": "cathedral",
+        "duration": "1.5 hours",
+        "entry_fee": "Free (exterior), €10 (tower access)",
+        "description": "Gothic masterpiece on Île de la Cité, currently under restoration but still impressive."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Le Marais",
+        "cuisine": "French",
+        "price": "$$$",
+        "must_try": "Duck confit with red wine sauce"
+      },
+      {
+        "name": "L’As du Fallafel",
+        "cuisine": "Middle Eastern",
+        "price": "$$",
+        "must_try": "Crispy falafel sandwich with harissa"
+      },
+      {
+        "name": "Café de Flore",
+        "cuisine": "Café",
+        "price": "$$$",
+        "must_try": "Croissant with espresso"
+      }
+    ],
+    "tips": [
+      "Buy a Paris Museum Pass for unlimited access and skip-the-line entry.",
+      "Use the Metro — it's fast, cheap, and covers all major attractions.",
+      "Visit the Eiffel Tower at night to see the sparkling light show every hour."
+    ],
+    "itineraries": {
+      "3-day": [
+        "Day 1: Eiffel Tower → Seine River Cruise → Champs-Élysées → Arc de Triomphe",
+        "Day 2: Louvre Museum → Tuileries Garden → Notre-Dame → Sainte-Chapelle",
+        "Day 3: Montmartre → Sacré-Cœur → Moulin Rouge → Dinner in Le Marais"
+      ],
+      "1-day": [
+        "Morning: Louvre → Tuileries → Notre-Dame → Sainte-Chapelle",
+        "Evening: Seine Cruise → Eiffel Tower (night view)"
+      ]
+    }
+  },
+  {
+    "city": "Tokyo",
+    "attractions": [
+      {
+        "name": "Senso-ji Temple",
+        "type": "temple",
+        "duration": "2 hours",
+        "entry_fee": "Free",
+        "description": "Tokyo’s oldest temple located in Asakusa, known for its giant lantern and bustling Nakamise shopping street."
+      },
+      {
+        "name": "Shibuya Crossing",
+        "type": "landmark",
+        "duration": "1 hour",
+        "entry_fee": "Free",
+        "description": "World’s busiest pedestrian scramble, iconic in films and media."
+      },
+      {
+        "name": "Meiji Shrine",
+        "type": "shrine",
+        "duration": "1.5 hours",
+        "entry_fee": "Free",
+        "description": "Serene Shinto shrine dedicated to Emperor Meiji, surrounded by a lush forest in Shibuya."
+      },
+      {
+        "name": "Tokyo Skytree",
+        "type": "observation",
+        "duration": "2 hours",
+        "entry_fee": "¥2,100",
+        "description": "Towering observation deck with panoramic views of Tokyo and Mount Fuji on clear days."
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Sukiyabashi Jiro",
+        "cuisine": "Sushi",
+        "price": "$$$$",
+        "must_try": "Omakase (chef’s choice) experience"
+      },
+      {
+        "name": "Ichiran Ramen",
+        "cuisine": "Ramen",
+        "price": "$$",
+        "must_try": "Tonkotsu ramen with extra chashu"
+      },
+      {
+        "name": "Tsukiji Tama Sushi",
+        "cuisine": "Sushi",
+        "price": "$$$",
+        "must_try": "Fresh tuna and uni (sea urchin)"
+      }
+    ],
+    "tips": [
+      "Get a Suica or Pasmo card for seamless travel on trains and buses.",
+      "Reserve high-end restaurants like Sukiyabashi Jiro weeks in advance.",
+      "Avoid rush hour (8–9:30 AM) on trains — it gets extremely crowded."
+    ],
+    "itineraries": {
+      "3-day": [
+        "Day 1: Meiji Shrine → Harajuku (Takeshita Street) → Shibuya Crossing → Hachiko Statue",
+        "Day 2: Asakusa (Senso-ji) → Tokyo Skytree → Sumida River Cruise",
+        "Day 3: Tsukiji Outer Market → Odaiba (teamLab Planets) → Robot Restaurant"
+      ],
+      "1-day": [
+        "Morning: Meiji Shrine → Harajuku → Shibuya Crossing",
+        "Afternoon: Akihabara (electronics) → Dinner in Shinjuku"
+      ]
+    }
+  }
+]
