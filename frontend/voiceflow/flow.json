@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "name": "TripGenie - Travel Planner",
+  "description": "AI-powered travel assistant with RAG and PDF delivery",
+  "type": "assistant",
+  "nodes": [
+    {
+      "id": "start",
+      "type": "intent",
+      "name": "Plan a trip",
+      "triggers": ["plan a trip", "travel plan", "vacation ideas", "trip ideas"],
+      "slots": [
+        {
+          "id": "city",
+          "name": "city",
+          "type": "text",
+          "prompt": "Which city would you like to visit?"
+        },
+        {
+          "id": "days",
+          "name": "days",
+          "type": "number",
+          "prompt": "How many days will you stay?"
+        },
+        {
+          "id": "preferences",
+          "name": "preferences",
+          "type": "text",
+          "prompt": "What are your interests? (e.g., food, culture, shopping)"
+        }
+      ],
+      "next": "call_api"
+    },
+    {
+      "id": "call_api",
+      "type": "integration",
+      "name": "Call Backend API",
+      "integration": "webhook",
+      "config": {
+        "method": "POST",
+        "url": "http://your-ngrok-url.ngrok.io/plan_trip",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "city": "{city}",
+          "days": "{days}",
+          "prefs": "{preferences}"
+        }
+      },
+      "next": "show_plan"
+    },
+    {
+      "id": "show_plan",
+      "type": "speak",
+      "message": "Here’s your {itinerary.data.days}-day trip to {itinerary.data.city}:\n\n{#each itinerary.data.itinerary}\n📅 Day {day}:\n{#each schedule}\n⏰ {time}: {activity} at {location}\n{/each}\n{/each}\n\n💡 Tips: {itinerary.data.tips.join(', ')}\n\nI'm sending a detailed PDF to your email or WhatsApp shortly!"
+    },
+    {
+      "id": "ask_feedback",
+      "type": "question",
+      "prompt": "Was this plan helpful?",
+      "buttons": [
+        { "label": "Yes 👍", "value": "positive" },
+        { "label": "No 👎", "value": "negative" }
+      ],
+      "next": "send_feedback"
+    }
+  ],
+  "variables": [
+    { "name": "city", "type": "string" },
+    { "name": "days", "type": "number" },
+    { "name": "preferences", "type": "string" },
+    { "name": "itinerary", "type": "object" }
+  ]
+}
