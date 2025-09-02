@@ -252,7 +252,7 @@ We welcome contributions! Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) f
 ---
 
 🌍 Built with ❤️ for travel lovers & AI hackers.
-```
+
 
 ---
 
