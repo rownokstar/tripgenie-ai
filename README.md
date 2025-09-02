@@ -1,10 +1,9 @@
 
 
----
 
 ## 📄 `README.md` – Full Practical Guide
 
-```markdown
+
 # 🧳 TripGenie – AI-Powered Travel Guide Assistant
 
 **TripGenie** is an intelligent travel assistant that generates **personalized travel itineraries** using **AI (RAG + GPT-4o-mini)**, and delivers them via **chat, voice, email, or WhatsApp**. Built for developers, travelers, and AI hackers.
@@ -20,7 +19,7 @@
 - 🔄 Feedback loop for continuous improvement
 - 📧 WhatsApp/email delivery (via Twilio/Gmail)
 - 📊 Logs to Google Sheets for analytics
-
+  
 ---
 
 ## 🧰 Tech Stack
@@ -272,11 +271,6 @@ We welcome contributions! Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) f
 3. Commit and push to GitHub
 
 ---
-
-## 🎁 Want the Full Project ZIP?
-
-👉 Type:  
-**"Yes, I want the full project ZIP file"**
 
 I’ll generate a downloadable `.zip` of the **entire TripGenie project** — including all folders, files, and instructions — ready to run on your local machine.
 
